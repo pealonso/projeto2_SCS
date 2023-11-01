@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="<http://www.thymeleaf.org>">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJETO 1 - TAMANHO</title>
+</head>
+<body>
+<h1 th:text="'Você digitou a palavra '+ ${palavra} + '.'"></h1>
+<p th:text="'A palavra ' + ${palavra} + ' possui ' + ${#strings.length(palavra)} + ' letras.'"></p>
+<hr>
+<p>Voltar para a <a href="http://localhost:3500">Home</a></p>
+
+</body>
+</html>

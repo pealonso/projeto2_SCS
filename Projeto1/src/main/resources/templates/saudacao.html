@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="<http://www.thymeleaf.org>">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJETO 1 - SAUDAÇÃO</title>
+</head>
+<body>
+<h1 th:if="${hora>=5 && hora<12}">Bom dia</h1>
+<h1 th:if="${hora>=12 && hora<19}">Boa tarde</h1>
+<h1 th:if="${hora>=19 && hora<=24 || hora>=0 && hora<5}">Boa noite</h1>
+<p th:text="'Agora são ' + ${hora} + 'h' + ${minuto} + 'min.'"></p>
+<hr>
+<p>Voltar para a <a href="http://localhost:3500">Home</a></p>
+
+</body>
+</html>
